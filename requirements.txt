@@ -1,6 +1,5 @@
 streamlit
-torch
 numpy
-matplotlib
-scikit-image
-gdal
+pandas
+scikit-learn
+
