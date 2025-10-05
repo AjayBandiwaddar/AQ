@@ -1,0 +1,12 @@
+version: "3.9"
+services:
+  streamlit-demo:
+    build: .
+    container_name: aq_sr_streamlit
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./models:/app/models
+    environment:
+      - PYTHONUNBUFFERED=1
+    restart: unless-stopped
